@@ -53,9 +53,11 @@ A **Transformer-based reverse diffusion module** is used to denoise the perturbe
 
 ### Loss Function
 The model minimizes the mean squared error (MSE) between the original latent representations and the denoised latents:
+
 $$
 \mathcal{L} = \frac{1}{N} \sum_{i=1}^{N} \| z_i - \hat{z}_i \|^2
 $$
+
 Where $z_i$ is the original latent, and $\hat{z}_i$ is the predicted latent after reverse diffusion.
 
 ### Training Steps
